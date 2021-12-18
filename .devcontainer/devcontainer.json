@@ -1,0 +1,12 @@
+{
+  "name": "emscripten",
+  "dockerComposeFile": ["../docker-compose.dev.yml", "docker-compose.yml"],
+  "service": "emscripten",
+  "workspaceFolder": "/usr/src/app/wasm",
+  "settings": {
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#007733"
+    }
+  },
+  "extensions": ["ms-vscode.cpptools-extension-pack"]
+}

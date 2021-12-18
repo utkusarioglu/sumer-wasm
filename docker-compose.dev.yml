@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  emscripten:
+    build:
+      dockerfile: Dockerfile.dev
+    working_dir: /usr/src/app/wasm
+    volumes:
+      - .:/usr/src/app/wasm
