@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <script type="module">
+    import module from './wasm.js';
+    const instance = await module();
+    await instance.ready;
+    const response = instance.lerp(1, 2, 0.5);
+    document.body.innerHTML = response;
+  </script>
+  <body></body>
+</html>
